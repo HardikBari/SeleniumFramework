@@ -28,6 +28,7 @@ public class LoginError extends BaseTest {
         String BlankErroP = landingPage.PasswordMissingMsg();
         Assert.assertTrue(BlankErroE.equalsIgnoreCase("*Email is required"));
         Assert.assertTrue(BlankErroP.equalsIgnoreCase("*Password is required"));
+        System.out.println("hello jenkins");
     }
 
 //    @DataProvider
