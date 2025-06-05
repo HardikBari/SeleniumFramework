@@ -27,12 +27,8 @@ public class BaseTest {
     public WebDriver InitializeDriver() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-<<<<<<< HEAD
         driver.manage().window().maximize();
-=======
-       //comment
         driver.manage().window().maximize();// Initialize the WebDriver here
->>>>>>> 776e9353eae011a35f4f3816966a1a536b1c6698
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         return driver;
     }
