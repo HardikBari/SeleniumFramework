@@ -10,6 +10,7 @@
     <test name="CompleteOrderTests">
         <classes>
             <class name="AutomationProejcts.Tests.StandAlone"/>
+            <class name="AutomationProejcts.Tests.DeleteLatestOrder"/>
             <!-- Add more test classes here if needed -->
         </classes>
     </test>

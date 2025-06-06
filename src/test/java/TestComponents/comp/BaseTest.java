@@ -24,7 +24,7 @@ public class BaseTest {
     //public String prodname = "zara coat 3";
   // public String country = "India";
 
-    public WebDriver InitializeDriver() {
+    public WebDriver initializeDriver() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();// Initialize the WebDriver here
@@ -53,7 +53,7 @@ public class BaseTest {
     }
      @BeforeMethod
     public LandingPage LaunchApplication(){
-        InitializeDriver();
+        initializeDriver();
          landingPage = new LandingPage(driver);
         landingPage.GoTo();
         return landingPage;

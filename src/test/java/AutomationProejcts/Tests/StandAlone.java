@@ -18,7 +18,7 @@ import java.util.HashMap;
 
 public class StandAlone extends BaseTest {
 
-    @Test (dataProvider = "jsonData", dataProviderClass = DataProviderJson.class)
+    @Test (dataProvider = "jsonData", dataProviderClass = DataProviderJson.class,groups = "make order")
 
     public void standaloneTest(HashMap<String,String> input) throws InterruptedException {
 
@@ -47,7 +47,7 @@ public class StandAlone extends BaseTest {
         landingPage.login(input.get("email"), input.get("password"));
         OrdersPage ordersPage = new OrdersPage(driver);
         ordersPage.ClickMyOrdersButton();
-        Boolean match = ordersPage.getPorudtName();
+        Boolean match = ordersPage.getPorudtName(input.get("product"));
         Assert.assertTrue(match);
         System.out.println(match);
 
