@@ -25,8 +25,6 @@ public class StandAlone extends BaseTest {
         landingPage.login(input.get("email"), input.get("password"));
         ProductCataloug productCataloug = new ProductCataloug(driver);
         productCataloug.addToCart(input.get("product"));
-
-
         CartPage cartPage = new CartPage(driver);
         cartPage.setCartButton();
         boolean value = cartPage.match(input.get("product"));
