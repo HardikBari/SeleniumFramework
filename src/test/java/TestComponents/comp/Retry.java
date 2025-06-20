@@ -8,7 +8,7 @@ import static org.testng.ITestResult.SKIP;
 public class Retry implements IRetryAnalyzer {
 
     private int count = 0;
-    private static final int maxTry = 1; // Will retry the test 2 more times (total 3 attempts)
+    private static final int maxTry = 1; // Will retry the test 1 more times (total 2 attempts)
 
     @Override
     public boolean retry(ITestResult result) {
@@ -20,4 +20,3 @@ public class Retry implements IRetryAnalyzer {
         return false; // Don't retry
     }
 }
-
