@@ -50,16 +50,5 @@ public class StandAlone extends BaseTest {
         System.out.println(match);
 
     }
-
-
-
-//    @DataProvider
-//
-//    public Object[][] getData() throws IOException {
-//       List<HashMap<String,String>> data= getjsondata();
-//       return new Object[][] {
-//                {data.get(0)},
-//       };
-
-//    }
+    
 }
