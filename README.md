@@ -1,4 +1,4 @@
-Selenium Test Automation Framework
+E-Commerce Selenium Test Automation Framework
 ==================================
 
 This is a modular and scalable Test Automation Framework built from scratch using:
@@ -20,3 +20,5 @@ Features
 - Modular and scalable
 - Maven-based dependency management
 - Extent Report
+
+
